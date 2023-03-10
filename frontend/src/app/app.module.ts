@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -13,6 +12,7 @@ import { UserPageComponent } from './user-page/user-page.component';
 import { HotelInfoComponent } from './hotel-info/hotel-info.component';
 import { FormsModule } from '@angular/forms';
 
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome'
 import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
@@ -31,7 +31,8 @@ import {HttpClientModule} from '@angular/common/http'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-.navbar
+.PC-navbar
 {
     width: 100%;
     height: 70px !important;
@@ -8,24 +8,30 @@
     justify-content: left;
 }
 
-.left_bar, .right_bar
+.navbar
+{
+    background-color: rgb(0,53,128) !important;
+    color: white !important;
+}
+
+.PC-left_bar, .PC-right_bar
 {
     flex: 1;
     height: 100%;
 }
 
-.left_bar
+.PC-left_bar
 {
     padding-top: 10px;
 }
 
-.logo
+.PC-logo
 {
     width: 30%;
     height: 40%;
 }
 
-.right_buttons
+.PC-right_buttons
 {
     display: flex;
     justify-content: right;
