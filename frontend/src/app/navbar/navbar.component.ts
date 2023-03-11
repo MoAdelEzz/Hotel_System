@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
   userIcon = faUserCircle;
   
   constructor(private http: HttpClient,private router:Router) {
-    
+      
   }
 
   goHome() : void
