@@ -1,0 +1,28 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">pass</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let usr of arr">
+        <th scope="row">{{usr.id}}</th>
+        <td>{{usr.name}}</td>
+        <td>{{usr.password}}</td>
+      </tr>
+    </tbody>
+</table>
+  
+  
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Insert New Name</span>
+    </div>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)] = "name">
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)] = "password">
+  </div>
+
+  <button (click) = "insert()">click me !</button>
