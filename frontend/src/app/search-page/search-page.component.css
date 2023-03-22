@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* filter side */
+.filter-side table{
+    
+    width:90%;
+    margin-left: 10px;
+
+ 
+ }
+
+.filter-side table tr , td{
+    border: 1px solid rgb(235, 228, 228);
+    padding-left: 8px;
+
+}
+.filter-side table h6{
+   font-weight: bold;
+    padding-top:4px;
+    padding-bottom:6px;
+
+}
+
+
+/* hotels side */
+.hotel-side .hotel-info{
+    border: 1px solid rgb(221, 215, 215);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+.hotel-side .hotel-info .hotel-img{
+    width: 100%;
+    height: 100%;
+    
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+
+.hotel-side .hotel-info{
+    position: relative;
+}
+.hotel-side .hotel-info .hotel-img img{
+    padding: 20px;
+    border-radius: 35px;
+    height:100%;
+   
+}
+/*
+.hotel-side .hotel-info .content{
+    position:absolute;
+    right:250px;
+}*/
+.hotel-side .hotel-info .content .hotel-name .rating{
+    color:rgb(252, 178, 42);
+    font-size: 13px;
+   
+}
+.hotel-side .hotel-info .content .hotel-name{
+   color:rgb(14, 103, 219);
+   font-weight: 500;
+   padding-top: 30px;
+}
+.hotel-side .hotel-info .content .hotel-city{
+    color:rgb(57, 129, 224);
+    font-size:13px;
+    
+   
+ }
+ .hotel-side .hotel-info .content .typeOfSearchedRoom {
+   margin-top: 10px;
+padding: 3px;
+   border-left:1px solid rgb(235, 228, 228);
+    
+   
+ }
+
+ .hotel-side .hotel-info .content .typeOfSearchedRoom h6{
+   
+    font-size:12px;
+   font-weight:bold;
+   margin-left: 4px;
+    
+   
+ }
+ .hotel-side .hotel-info .content .typeOfSearchedRoom p{
+   
+    font-size:13px;
+   font-weight:lighter;
+   margin-left: 4px; 
+ }
+
+
+
+ .hotel-side .hotel-info .content .typeOfSearchedRoom .another-info {
+   
+   
+   color: green;
+  
+ }
+
+ .hotel-side .hotel-info  .hotel-btn {
+    width: 130px;
+    
+ }
+ .hotel-side .hotel-info  .hotel-btn .discount {
+   text-decoration: line-through;
+   color: rgb(226, 29, 29);
+   font-weight: 400;
+    
+ }
+
+ .navbar
+ {
+    padding-top: 0px;
+ }
+
+ .icheck
+ {
+    margin-right: 5px;
+ }
+
+ .nothing{
+  
+    display: none;;
+}
+
+.hide
+{
+    transition: all 0.5s;
+}
+
+
+ .hotel-side .hotel-info .reviews{
+    width: 130px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 1px;
+    
+     }
+
+ .hotel-side .hotel-info .reviews p{
+font-size: 12px;
+
+ }
+
+ .hotel-side .hotel-info .reviews .number{
+    background-color:rgb(47, 47, 121);
+    color: white;
+     padding:2px;
+    font-size: 20px;
+    
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    
+    
+    height: 40px;
+    width: 40px;
+    text-align: center;
+   
+     }

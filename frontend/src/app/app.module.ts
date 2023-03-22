@@ -13,7 +13,14 @@ import { HotelInfoComponent } from './hotel-info/hotel-info.component';
 import { FormsModule } from '@angular/forms';
 
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome'
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { AddHotelsComponent } from './add-hotels/add-hotels.component';
+import { FormHotelsComponent } from './form-hotels/form-hotels.component';
+import { FormSubadminComponent } from './form-subadmin/form-subadmin.component';
+import { MainAdmineComponent } from './main-admine/main-admine.component'
+import { ProfileAdminComponent } from './profile-admin/profile-admin.component';
+import { SubAdmineComponent } from './sub-admine/sub-admine.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +32,14 @@ import {HttpClientModule} from '@angular/common/http'
     RegisterComponent,
     AdminPanelComponent,
     UserPageComponent,
-    HotelInfoComponent
+    HotelInfoComponent,
+    AddHotelsComponent,
+    FormHotelsComponent,
+    FormSubadminComponent,
+    MainAdmineComponent,
+    ProfileAdminComponent,
+    SubAdmineComponent,
+    ProfilePageComponent
   ],
   imports: [
     BrowserModule,

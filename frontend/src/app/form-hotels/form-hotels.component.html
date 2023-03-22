@@ -1,0 +1,57 @@
+<!-- No Labels Form -->
+<main id="main" class="main">
+  <section class="section" id="formsub">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Hotels</h5>
+
+            <!-- Multi Columns Form -->
+            <div class="row g-3">
+              <div class="col-md-12">
+                <label for="inputName5" class="form-label">Hotel Name</label>
+                <input [(ngModel)] = "hotel['name']" type="text" class="form-control" id="inputName5">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress5" class="form-label">Address</label>
+                <input [(ngModel)] = "hotel['Address']" type="text" class="form-control" id="inputAddres5s" placeholder="1234 Main St">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress5" class="form-label">location</label>
+                <input [(ngModel)] = "hotel['location']" type="text" class="form-control" id="inputAddres5s" placeholder="1234 Main St">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Phone</label>
+                <input [(ngModel)] = "hotel['phone']" type="number" class="form-control" id="inputAddress2" placeholder="0123">
+              </div>
+              <div class="col-12">
+                <label for="inputEmail2" class="form-label">Email</label>
+                <input [(ngModel)] = "hotel['email']" type="email" class="form-control" id="inputEmail2">
+              </div>
+              <div class="col-12">
+                <label for="inputImage2" class="form-label">Image Url</label>
+                <input [(ngModel)] = "hotel['images']" type="text" class="form-control" id="inputImage2">
+              </div>
+              <div class="col-12">
+                <label for="inputImage2" class="form-label">Owner</label>
+                <select [(ngModel)] = "hotel['adminID']" class="custom-select custom-select-lg mb-3">
+                  <option *ngFor = "let admin of admins_username" [value]="admin">{{admin}}</option>
+                </select>
+              </div>
+
+
+              <div class="text-center mt-5">
+                <button type="submit" class="btn btn-primary ml-4" (click) = "submit()">Submit</button>
+                <button type="reset" class="btn btn-secondary ml-2" (click)="reset()">Reset</button>
+              </div>
+            </div><!-- End Multi Columns Form -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- End No Labels Form -->
+

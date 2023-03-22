@@ -12,7 +12,15 @@ export class AdminPanelComponent implements OnInit {
     
   }
 
+  x = "1";
+
   ngOnInit(): void {
   }
+
+  changePage(e)
+  {
+    this.x = e;
+  }
+
 
 }

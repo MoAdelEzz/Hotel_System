@@ -1,0 +1,62 @@
+<main id="main" class="main">
+
+  <div class="pagetitle" id="subadmin">
+    <h1>Sub Admin</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item">Admin</li>
+        <li class="breadcrumb-item active">Sub Admin</li>
+      </ol>
+    </nav>
+  </div><!-- End Page Title -->
+
+  <section class="section">
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Admin list</h5>
+            <!-- Table with stripped rows -->
+            <table class="table datatable">
+              <thead>
+                <tr>
+
+                  <th scope="col">Name</th>
+                  <th scope="col">Username</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Phone</th>
+                  <th scope="col">Role</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr *ngFor = "let admin of admins">
+
+                  <td>{{admin.name}}</td>
+                  <td>{{admin.username}}</td>
+                  <td>{{admin.email}}</td>
+                  <td>{{admin.phone}}</td>
+                  <td>{{admin.role}}</td>
+                  <td><button type="button" class="btn btn-outline-danger" (click) = "deleteAdmin(admin.username)"><fa-icon [icon]="basket"></fa-icon></button></td>
+                </tr>
+          
+              </tbody>
+            </table>
+            <!-- End Table with stripped rows -->
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+<app-form-subadmin></app-form-subadmin>
+
+<!-- End #main -->
+
+

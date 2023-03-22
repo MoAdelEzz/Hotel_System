@@ -1,1 +1,10 @@
-<p>admin-panel works!</p>
+
+
+<app-navbar></app-navbar>
+<app-main-admine (Emitter)="changePage($event)"></app-main-admine>
+
+<app-profile-admin *ngIf = "x == '0'"></app-profile-admin>
+
+<app-sub-admine *ngIf = "x == '1'"></app-sub-admine>
+<app-add-hotels *ngIf = "x == '2'"></app-add-hotels>
+<router-outlet></router-outlet>
